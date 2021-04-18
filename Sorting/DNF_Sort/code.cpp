@@ -1,3 +1,4 @@
+//Dutch National Flag Sorting - aka 0,1,2 Sort
 #include<iostream>
 using namespace std;
 
@@ -7,10 +8,11 @@ void swap(int arr[], int i, int j){
     arr[j]=temp;
 }
 
+//dnfSort is the function, wherein we will pass the parameter array(arr[]) and the size of the array(n)
 void dnfSort(int arr[], int n){
-    int low=0;
-    int high=n-1;
-    int mid=0;
+    int low=0;   //low is 0 because we start the low pointer from the beginning
+    int high=n-1;  //high is placed at the end/end element of the array
+    int mid=0;    //mid is also 0 as it starts from the beginning and iterates through each element
 
     while(mid<=high)
     {
